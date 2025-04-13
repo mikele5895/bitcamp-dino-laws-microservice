@@ -42,7 +42,7 @@ function App() {
     setResponse('');
 
     try {
-      const res = await fetch('http://localhost:8000/get-laws', {
+      const res = await fetch('http://3.149.228.61:8000/get-laws', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ location }),
