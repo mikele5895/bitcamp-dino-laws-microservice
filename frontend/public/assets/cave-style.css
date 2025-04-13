@@ -1,0 +1,48 @@
+body {
+  background-image: url('/assets/cave-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Papyrus', cursive;
+  color: white;
+}
+
+/* Scroll box is hidden unless "visible" class is added */
+#law-scroll {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  border: 3px solid #c0a472;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 1.25rem;
+  color: #f8f8f2;
+  margin: 50px auto;
+  width: 70%;
+  min-height: 220px;
+  box-shadow: 0 0 25px #000000aa;
+  backdrop-filter: blur(6px);
+}
+
+/* Show scroll when answer is present */
+#law-scroll.visible {
+  display: block;
+}
+
+.flicker {
+  animation: flicker 1.3s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.8;
+    text-shadow: 0 0 10px #ffebc6, 0 0 20px #ffcb91;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 20px #ffd591, 0 0 40px #ffb347;
+  }
+}
