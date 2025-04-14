@@ -1,4 +1,4 @@
-Try it out: apeye.tech
+Try it out: [apeye.tech](http://apeye.tech:5173/index2.html)
 
 🦕 Inspiration
 
